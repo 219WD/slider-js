@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+
+.header{
+    background-color: #171717;
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-menu-link{
+    color: white;
+    text-decoration: none;
+}
+
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+    color: white;
+}
+
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+
+.nav-menu-item{
+    font-size: 18px;
+    margin: 0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+.nav-menu-link:hover{
+    background-color: white;
+    color: black;
+    transition: .5s;
+}
+
+.toggle{
+    color: white;
+    background: none;
+    border: none;
+    font-size: 30px;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+}
+
+/* FIN DEL NAV */
+body{
+    background-image: url(https://img.freepik.com/foto-gratis/textura-carretera-negra_1160-806.jpg);
+}
+
+
+.container-slider{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    /* max-width: 1200px; */
+    padding: 8px 40px;
+}
+
+.slider-left, .slider-right{
+    width: 5%;
+}
+
+.slider-left img, .slider-right img{
+    width: 100%;
+}
+
+.slider-screen{
+    width: 90%;
+}
+
+.slider-screen img{
+    width: 100%;
+    border-radius: 15px;
+
+    -webkit-box-shadow: -1px 1px 10px 1px rgba(255,255,255,1);
+    -moz-box-shadow: -1px 1px 10px 1px rgba(255,255,255,1);
+    box-shadow: -1px 1px 10px 1px rgba(255,255,255,1);
+}
+
+
+@media (max-width: 768px){
+    .nav-menu{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        background-color: #2e2e2e;
+        position: fixed;
+        left: 0;
+        top: 80px;
+        width: 100%;
+        align-items: center;
+        padding: 0;
+        left: 100%;
+        transition: left 0.3s;
+    }
+
+    .nav-menu-link:hover{
+        background: none;
+        color: black;
+        transition: .5s;
+    }
+
+    .toggle{
+        display: block;
+        cursor: pointer;
+    }
+
+    .nav-menu_visible{
+        left: 0;
+    }
+
+    
+}
