@@ -5,7 +5,7 @@ toggle.addEventListener("click", () =>{
     navMenu.classList.toggle("nav-menu_visible");
 })
 
-var imagenes = [
+let imagenes = [
     "/imagenes/1.jpg",
     "/imagenes/2.jpg",
     "/imagenes/3.jpg",
@@ -14,12 +14,12 @@ var imagenes = [
 ];
 document.Imagen.src = imagenes[0];
 
-var sliderDerecha = document.querySelector(".slider-derecha");
-var sliderIzquierda = document.querySelector(".slider-izquierda");
+let sliderDerecha = document.querySelector(".slider-derecha");
+let sliderIzquierda = document.querySelector(".slider-izquierda");
 
 sliderDerecha.addEventListener("click", moverDerecha);
 
-var contador = 0;
+let contador = 0;
 
 function moverDerecha(){
     contador++;
@@ -29,7 +29,7 @@ function moverDerecha(){
     }
     document.Imagen.src = imagenes[contador];
 }
-var intervalo = setInterval(moverDerecha, 2000);
+let intervalo = setInterval(moverDerecha, 2000);
 sliderDerecha.addEventListener("click", function(){
     clearInterval(intervalo);
     moverDerecha();
